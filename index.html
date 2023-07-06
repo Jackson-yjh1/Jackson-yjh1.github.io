@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/js/iconfont.js"></script>
+  </head>
+  <body>
+    <div class="container fs-2">
+      <div class="row">
+        <div class="col-12">
+          <!-- 导航栏 -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">keymoset.com</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/mouse.html">Mouse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/keyboard.html">Keyboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/other.html">other</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div id="carousel1" class="carousel slide carousel-fade">
+          <!-- 指示器 -->
+          <div class="carousel-indicators d-none d-xxl-flex">
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active custom-indicator" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" class="custom-indicator" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" class="custom-indicator" aria-label="Slide 3"></button>
+          </div>
+          <!-- 轮播项 -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/banner_mart_e.png" class="img-fluid d-block" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/S20_2.jpg" class="img-fluid d-block" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/banner_mart_e.png" class="img-fluid d-block" alt="..." />
+            </div>
+          </div>
+          <div class="carousel-controls d-none d-xxl-flex">
+            <!-- 轮播按钮 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-arrow-left-bold"></use>
+              </svg>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-arrow-right-bold"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex product">
+          <a href="#"><img src="./images/160678362525s0.jpg" alt="" /></a>
+          <p>比率 RWM10（无线）</p>
+          <p>$ 82,800</p>
+        </div>
+        <div class="col d-flex product">
+          <a href="#"><img src="./images/160678362525s0.jpg" alt="" /></a>
+          <span>比率 RWM10（无线）</span>
+          <span>$ 82,800</span>
+        </div>
+        <div class="col d-flex product">
+          <a href="#"><img src="./images/160678362525s0.jpg" alt="" /></a>
+          <p>比率 RWM10（无线）</p>
+          <p>$ 82,800</p>
+        </div>
+      </div>
+    </div>
+    <script src="
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js
+    "></script>
+  </body>
+</html>

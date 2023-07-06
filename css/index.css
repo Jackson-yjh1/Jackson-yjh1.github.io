@@ -1,0 +1,8 @@
+.product {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.product a:hover {
+  text-decoration: none;
+}

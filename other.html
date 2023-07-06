@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+"
+      rel="stylesheet"
+    />
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="/css/common.css" />
+    <!-- 字体图标symbol引用 -->
+    <script src="/js/iconfont.js"></script>
+  </head>
+  <body>
+    <div class="container fs-2">
+      <div class="row">
+        <div class="col-12">
+          <!-- 导航栏 -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">keymoset.com</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/other.html">Mouse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/keyboard.html">Keyboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/other.html">other</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-interval="300">
+          <!-- 指示器 -->
+          <div class="carousel-indicators d-none d-xxl-flex">
+            <!-- 第一个指示器按钮 -->
+            <button type="button" class="active custom-indicator" data-bs-target="#carousel1" data-bs-slide-to="0"></button>
+            <!-- 第二个指示器按钮 -->
+            <button type="button" class="custom-indicator" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+            <!-- 可以添加更多 -->
+            <button type="button" class="custom-indicator" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+          </div>
+          <!-- 轮播项 -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- 第一张轮播项内容 -->
+              <img class="img-fluid" src="./images/S20_2.jpg" alt="" />
+            </div>
+            <div class="carousel-item">
+              <!-- 第二张轮播项内容 -->
+              <img class="img-fluid" src="./images/banner_mart_e.png" alt="" />
+            </div>
+            <!-- 可以添加更多轮播项 -->
+            <div class="carousel-item">
+              <img class="img-fluid" src="./images/S20_2.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="carousel-controls d-none d-xxl-flex">
+            <!-- 轮播控制按钮 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <!-- 向前滚动箭头图标 -->
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-arrow-left-bold"></use>
+              </svg>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <!-- 向后滚动箭头图标 -->
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-arrow-right-bold"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 面包屑 -->
+      <div class="row px-5">
+        <div class="col-12">
+          <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>'">
+            <!-- 面包屑导航项1 -->
+            <li class="breadcrumb-item"><a href="#">Other</a></li>
+          </ol>
+        </div>
+      </div>
+      <!-- 商品展示 -->
+      <div class="row px-5">
+        <div class="co-12">
+          <!-- 导航组件 -->
+          <ul class="nav nav-tabs" id="nav">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#other_type1">other type 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#other_type2">other type 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#other_type3">other type 3</a>
+            </li>
+          </ul>
+
+          <!-- 选项卡组件 -->
+          <div class="tab-content">
+            <!-- other_type1 选项卡面板 -->
+            <div class="tab-pane fade show active" id="other_type1">
+              <h3>other_type1 Content</h3>
+              <p>This is the content of the other_type1 tab.</p>
+            </div>
+
+            <!-- other_type2 选项卡面板 -->
+            <div class="tab-pane fade show" id="other_type2">
+              <h3>other_type2 Content</h3>
+              <p>This is the content of the other_type2 tab.</p>
+            </div>
+            <!-- other_type3 选项卡面板 -->
+            <div class="tab-pane fade show" id="other_type3">
+              <h3>other_type3 Content</h3>
+              <p>This is the content of the other_type3 tab.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js
+"></script>
+    <script src="/js/common.js"></script>
+  </body>
+</html>
