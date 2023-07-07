@@ -1,4 +1,8 @@
 @charset "UTF-8";
+:root {
+  --bs-body-bg: #111 !important; /* 修改背景色 */
+}
+
 a {
   text-decoration: none;
 }
@@ -6,8 +10,11 @@ a {
 .container {
   max-width: 100%;
 }
-.container ul li:hover {
+.container ul li:hover a {
   background-color: #f08300;
+}
+.container ul li:hover .active {
+  background-color: transparent;
 }
 .container .icon {
   width: 3em;
@@ -16,9 +23,24 @@ a {
   fill: currentColor;
   overflow: hidden;
 }
+.container #logo {
+  width: 4em;
+}
+.container .navbar-nav {
+  margin: 0 auto;
+}
+.container .navbar-nav .nav-item {
+  margin: 0 1em;
+}
+.container .navbar-nav .nav-link {
+  color: #ccc;
+}
+.container .navbar-nav .nav-link.active {
+  color: #f08300;
+}
 .container #carousel1 {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 1900px;
   margin: 0 auto;
 }
@@ -56,6 +78,12 @@ a {
   color: #f08300;
   font-size: 2rem;
 }
+.container #carousel1 .carousel-controls .carousel-control-prev {
+  margin-left: -11.25rem;
+}
+.container #carousel1 .carousel-controls .carousel-control-next {
+  margin-right: -11.25rem;
+}
 .container .breadcrumb {
   background-color: transparent;
   padding: 0;
@@ -72,10 +100,10 @@ a {
   content: ">";
   color: #fff;
 }
-.container .nav-item .nav-link {
+.container .nav-tabs .nav-item .nav-link {
   color: #ccc;
   font-size: 0.8rem;
 }
-.container .nav-item .nav-link.active {
+.container .nav-tabs .nav-item .nav-link.active {
   color: #f08300;
 }
