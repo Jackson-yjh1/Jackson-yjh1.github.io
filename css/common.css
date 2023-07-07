@@ -79,10 +79,10 @@ a {
   font-size: 2rem;
 }
 .container #carousel1 .carousel-controls .carousel-control-prev {
-  margin-left: -11.25rem;
+  margin-left: -1.25rem;
 }
 .container #carousel1 .carousel-controls .carousel-control-next {
-  margin-right: -11.25rem;
+  margin-right: -1.25rem;
 }
 .container .breadcrumb {
   background-color: transparent;
